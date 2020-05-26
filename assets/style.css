@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+body {
+    font-family: 'Quicksand', Arial, sans-serif;
+    background-color: gray;
+
+}
+
+header {
+    display: inline;
+}
+
+.top-bar {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 60px;
+    background-color: lightskyblue;
+    position: fixed;
+    z-index: 9999;
+}
+
+nav {}
+
+nav li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: salmon;
+}
+
+nav a:hover {
+    font-weight: bolder;
+    color: seagreen;
+    text-decoration-line: underline;
+    text-decoration-style: solid
+}
+
+.jumbotron {
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 600px;
+    background-image: url(img/atlas_book.jpg);
+    background-size: cover;
+    margin-top: 60px;
+    position: fixed;
+
+
+}
