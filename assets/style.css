@@ -138,16 +138,6 @@ aside {
     text-align: center;
 }
 
-.thumbnail2 {
-    color: #212A40;
-    margin: 40px 30px 40px 30px;
-    width: 150px;
-    float: left;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 10pt;
-    text-align: center;
-}
-
 .thumb {
     width: 100px;
     height: 120px;
@@ -221,10 +211,6 @@ h3 a {
     text-align: center;
 }
 
-/* #aside .thumbnail h3 {
-    color: green;
-} */
-
 .figure {
     text-align: center;
 }
@@ -240,11 +226,21 @@ h3 a {
 }
 
 .detail-film table {
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    margin: auto;
 }
 
 .detail-film th {
     color: #212A40;
+}
+
+.detail-film input {
+    width: 70px;
+}
+
+.minus,
+.plus {
+    width: 20px;
 }
 
 .button {

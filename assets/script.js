@@ -1,10 +1,5 @@
 const film = document.querySelector('.film');
-
-
 const detail = document.querySelector('.detail');
-
-const thumbnail2 = document.querySelector('.thumbnail2');
-const h3 = document.querySelector('.judul');
 
 film.addEventListener('click', function (e) {
     if (e.target.className == 'thumb') {
@@ -12,9 +7,25 @@ film.addEventListener('click', function (e) {
     }
 });
 
-//untuk mengganti judul
-const h3baru = document.createElement('h3');
-const teksh3baru = document.createTextNode('Midsomar');
+const harga = 275500;
+// const quantity = document.querySelector('.quantity');
+const minus = document.querySelector('.minus');
+const plus = document.querySelector('.plus');
+const angka = document.querySelector('input');
 
-h3baru.appendChild(teksh3baru);
-thumbnail2.replaceChild(h3baru, h3);
+minus.addEventListener('click', function (e) {
+    angka.value = parseInt(angka.value) - 1;
+
+});
+
+plus.addEventListener('click', function (e) {
+    angka.value = parseInt(angka.value) + 1;
+});
+
+
+
+const hitung = document.querySelector('.hitung');
+hitung.addEventListener('click', function (e) {
+    const total = harga * angka.value;
+    document.querySelector('#total').innerHTML = total;
+});
